@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+
+// Custom CSS
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.audio-control {
+    height: 7%;
+}
+
+.intro {
+    height: 500px;
+    background-color: lightpink;
+}
+
+.info {
+    height: 700px;
+    background-color: lightblue;
+}
+
+.full-height {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.left-top {
+    background-color: white;
+    min-height: 60%;
+}
+
+.right-top {
+    min-height: 40%;
+}
+
+.left-bottom {
+    min-height: 33%;
+}
+
+.middle-bottom {
+    min-height: 33%;
+}
+
+.right-bottom {
+    min-height: 33%;
+}
+
+.element {
+    display: inline;
+}

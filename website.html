@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aymen's Website</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="./node_modules/typed.js/lib/typed.js"></script>
+</head>
+
+<body>
+    <section class="audio-control">
+        mute
+    </section>
+    <section class="intro">
+        <div class="columns is-desktop full-height">
+            <div class="column left-top">a
+                <div class="element"></div>
+                <script>
+                    var typed = new Typed('.element', {
+                        strings: ['This is thing 1', 'This is thing 2'],
+                        smartBackspace: true, // Default value
+                        loop: true,
+                        typeSpeed: 50,
+                        backSpeed: 30
+                    });
+                </script>
+            </div>
+            <div class="column right-top">b</div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="columns full-height">
+            <div class="column left-bottom">c</div>
+            <div class="column middle-bottom">d</div>
+            <div class="column right-bottom">e</div>
+        </div>
+    </section>
+    <footer>f</footer>
+</body>
+<script src="./main.js"></script>
+
+</html>
