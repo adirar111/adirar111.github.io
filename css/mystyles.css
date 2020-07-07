@@ -14972,11 +14972,10 @@ html {
   height: 7%; }
 
 .intro {
-  height: 500px;
-  background-color: lightpink; }
+  height: 550px; }
 
 .info {
-  height: 700px;
+  height: 500px;
   background-color: lightblue; }
 
 .full-height {
@@ -14986,10 +14985,13 @@ html {
 
 .left-top {
   background-color: white;
-  min-height: 60%; }
+  min-height: 50%; }
 
 .right-top {
-  min-height: 40%; }
+  background-color: lightpink;
+  min-height: 50%;
+  overflow: auto;
+  text-align: center; }
 
 .left-bottom {
   min-height: 33%; }
@@ -15000,5 +15002,51 @@ html {
 .right-bottom {
   min-height: 33%; }
 
+.text-area {
+  position: initial;
+  margin-top: 100px; }
+
 .element {
   display: inline; }
+
+#me {
+  height: 25vw;
+  width: 25vw;
+  box-shadow: 0px 0px 88px -59px #000; }
+
+.typed-cursor {
+  font-size: 1.5rem; }
+
+.socials {
+  display: inline-block;
+  vertical-align: middle; }
+
+.social-button {
+  display: inline-block;
+  margin: 0px 40px 0px 40px;
+  vertical-align: middle; }
+
+.email {
+  padding-top: 40px; }
+
+@media only screen and (max-width: 1024px) {
+  #me {
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 0px 0px 88px -59px #000; }
+  .text-area {
+    position: initial;
+    margin-top: 20px; }
+  .email {
+    padding-top: 0px; } }
+
+@media only screen and (min-width: 1500px) {
+  #me {
+    height: 20vw;
+    width: 20vw;
+    box-shadow: 0px 0px 88px -59px #000; }
+  .text-area {
+    position: initial;
+    margin-top: 100px; }
+  .email {
+    padding-top: 20%; } }

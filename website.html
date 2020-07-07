@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aymen's Website</title>
+    <link rel="icon" type="image/gif/png" href="./resources/icon.png">
     <link rel="stylesheet" href="css/mystyles.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="./node_modules/typed.js/lib/typed.js"></script>
@@ -16,20 +17,40 @@
         mute
     </section>
     <section class="intro">
-        <div class="columns is-desktop full-height">
-            <div class="column left-top">a
-                <div class="element"></div>
-                <script>
-                    var typed = new Typed('.element', {
-                        strings: ['This is thing 1', 'This is thing 2'],
-                        smartBackspace: true, // Default value
-                        loop: true,
-                        typeSpeed: 50,
-                        backSpeed: 30
-                    });
-                </script>
+        <div class="columns full-height">
+            <div class="column left-top">
+                <figure class="image">
+                    <img class="is-rounded" id="me" src="resources/me.jpg">
+                </figure>
+                <div class="text-area">
+                    <div
+                        class="is-family-code has-text-weight-semibold is-size-3-desktop is-size-4-tablet is-size-5-mobile element">
+                    </div>
+                    <script>
+                        var typed = new Typed('.element', {
+                            strings: ["Hi, I\'m Aymen", "I\'m studying computer science", "I'm a UBC sophomore^1000", "I like to build stuff^1000", "Feel free to reach out!^1000"],
+                            smartBackspace: true,
+                            loop: true,
+                            typeSpeed: 50,
+                            backSpeed: 30,
+                        });
+                    </script>
+                </div>
             </div>
-            <div class="column right-top">b</div>
+            <div class="column right-top">
+                <div>
+                    <ul class="socials">
+                        <li class="social-button"> <i class="fab fa-github fa-6x"></i> </li>
+                        <li class="social-button"> <i class="fab fa-linkedin fa-6x"></i> </li>
+                        <li class="social-button"> <i class="fab fa-twitter fa-6x"></i> </li>
+                    </ul>
+                </div>
+                <div class="email">
+                    <h3 class="is-size-2-desktop is-size-4-tablet is-size-6-mobile">Contact me at:</h3>
+                    <h1 class="has-text-weight-bold is-size-4-desktop is-size-6-tablet is-size-7-mobile">
+                        adirar111[at]gmail[dot]com</h1>
+                </div>
+            </div>
         </div>
     </section>
     <section class="info">
