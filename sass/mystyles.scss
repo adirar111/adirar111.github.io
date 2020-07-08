@@ -20,11 +20,8 @@ $primary-invert: $pink-invert;
 @import "../node_modules/bulma/bulma";
 
 // Custom CSS
+html,
 body {
-    height: 100%;
-}
-
-html {
     height: 100%;
 }
 
@@ -33,7 +30,7 @@ html {
 }
 
 .intro {
-    height: 550px;
+    height: 400px;
 }
 
 .info {
@@ -55,7 +52,7 @@ html {
 .right-top {
     background-color: lightpink;
     min-height: 50%;
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -73,7 +70,7 @@ html {
 
 .text-area {
     position: initial;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .element {
@@ -81,8 +78,8 @@ html {
 }
 
 #me {
-    height: 25vw;
-    width: 25vw;
+    height: 20vw;
+    width: 20vw;
     box-shadow: 0px 0px 88px -59px #000;
 }
 
@@ -93,6 +90,7 @@ html {
 .socials {
     display: inline-block;
     vertical-align: middle;
+    font-size: 100px;
 }
 
 .social-button {
@@ -105,34 +103,56 @@ html {
     padding-top: 40px;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 // for transition to mobile
 @media only screen and (max-width: 1024px) {
     #me {
-        height: 40vw;
-        width: 40vw;
+        height: 25vw;
+        width: 25vw;
         box-shadow: 0px 0px 88px -59px #000;
     }
     .text-area {
         position: initial;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .email {
         padding-top: 0px;
+    }
+    .typed-cursor {
+        font-size: 1rem;
+    }
+    .socials {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 50px;
     }
 }
 
 // for larger displays
 @media only screen and (min-width: 1500px) {
     #me {
-        height: 20vw;
-        width: 20vw;
+        height: 15vw;
+        width: 15vw;
         box-shadow: 0px 0px 88px -59px #000;
     }
     .text-area {
         position: initial;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .email {
-        padding-top: 20%;
+        padding-top: 50px;
+    }
+    .typed-cursor {
+        font-size: 2rem;
     }
 }
