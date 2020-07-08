@@ -26,7 +26,8 @@ body {
 }
 
 .audio-control {
-    height: 7%;
+    position: relative;
+    height: auto;
 }
 
 .intro {
@@ -45,11 +46,13 @@ body {
 }
 
 .left-top {
+    position: relative;
     background-color: white;
     min-height: 50%;
 }
 
 .right-top {
+    position: relative;
     background-color: lightpink;
     min-height: 50%;
     overflow: hidden;
@@ -100,7 +103,8 @@ body {
 }
 
 .email {
-    padding-top: 40px;
+    position: relative;
+    margin-top: 30px;
 }
 
 a {
@@ -114,8 +118,12 @@ a:hover {
     cursor: pointer;
 }
 
+audio {
+    display: none;
+}
+
 // for transition to mobile
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     #me {
         height: 25vw;
         width: 25vw;
@@ -126,15 +134,20 @@ a:hover {
         margin-top: 30px;
     }
     .email {
-        padding-top: 0px;
+        margin-top: 0px;
     }
     .typed-cursor {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .socials {
         display: inline-block;
         vertical-align: middle;
         font-size: 50px;
+    }
+    .social-button {
+        display: inline-block;
+        margin: 0px 20px 0px 20px;
+        vertical-align: middle;
     }
 }
 
@@ -150,7 +163,7 @@ a:hover {
         margin-top: 50px;
     }
     .email {
-        padding-top: 50px;
+        margin-top: 50px;
     }
     .typed-cursor {
         font-size: 2rem;

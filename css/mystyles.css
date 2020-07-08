@@ -14967,7 +14967,8 @@ body {
   height: 100%; }
 
 .audio-control {
-  height: 7%; }
+  position: relative;
+  height: auto; }
 
 .intro {
   height: 400px; }
@@ -14982,10 +14983,12 @@ body {
   margin: 0px; }
 
 .left-top {
+  position: relative;
   background-color: white;
   min-height: 50%; }
 
 .right-top {
+  position: relative;
   background-color: lightpink;
   min-height: 50%;
   overflow: hidden;
@@ -15026,7 +15029,8 @@ body {
   vertical-align: middle; }
 
 .email {
-  padding-top: 40px; }
+  position: relative;
+  margin-top: 30px; }
 
 a {
   color: #000;
@@ -15037,7 +15041,10 @@ a:hover {
   text-decoration: none;
   cursor: pointer; }
 
-@media only screen and (max-width: 1024px) {
+audio {
+  display: none; }
+
+@media only screen and (max-width: 1200px) {
   #me {
     height: 25vw;
     width: 25vw;
@@ -15046,13 +15053,17 @@ a:hover {
     position: initial;
     margin-top: 30px; }
   .email {
-    padding-top: 0px; }
+    margin-top: 0px; }
   .typed-cursor {
-    font-size: 1rem; }
+    font-size: 1.5rem; }
   .socials {
     display: inline-block;
     vertical-align: middle;
-    font-size: 50px; } }
+    font-size: 50px; }
+  .social-button {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    vertical-align: middle; } }
 
 @media only screen and (min-width: 1500px) {
   #me {
@@ -15063,6 +15074,6 @@ a:hover {
     position: initial;
     margin-top: 50px; }
   .email {
-    padding-top: 50px; }
+    margin-top: 50px; }
   .typed-cursor {
     font-size: 2rem; } }
