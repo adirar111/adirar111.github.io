@@ -186,8 +186,7 @@ audio {
 #hr {
     background-color: $pinkish;
 }
-
-// for transition to mobile
+// for transition to tablet-mobile
 @media only screen and (max-width: 1200px) {
     .contact {
         margin-top: 25px;
@@ -202,7 +201,7 @@ audio {
     }
 
     .typed-cursor {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .socials {
@@ -215,5 +214,12 @@ audio {
         display: inline-block;
         margin: 0px 20px 0px 20px;
         vertical-align: middle;
+    }
+}
+
+// for mobile only
+@media only screen and (max-width: 769px) {
+    .typed-cursor {
+        font-size: 1rem;
     }
 }

@@ -15100,7 +15100,7 @@ audio {
   #email {
     font-size: 20px; }
   .typed-cursor {
-    font-size: 1.4rem; }
+    font-size: 1.5rem; }
   .socials {
     display: inline-block;
     vertical-align: middle;
@@ -15109,3 +15109,7 @@ audio {
     display: inline-block;
     margin: 0px 20px 0px 20px;
     vertical-align: middle; } }
+
+@media only screen and (max-width: 769px) {
+  .typed-cursor {
+    font-size: 1rem; } }
