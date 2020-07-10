@@ -14965,7 +14965,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 html,
 body {
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  background-color: #24305e; }
 
 .audio-control {
   position: relative;
