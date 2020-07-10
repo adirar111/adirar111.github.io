@@ -13,21 +13,22 @@
 </head>
 
 <body>
-    <section class="audio-control">
-        <audio src="resources/inky-md-loop-2.mp3"></audio>
-        <button class="button is-danger is-rounded" id="play-pause">
-            <i class="fas fa-volume-up" id="volume-icon"></i>
-        </button>
-    </section>
+    <!-- <section class="audio-control">
+
+    </section> -->
     <section class="intro">
         <div class="columns full-height">
             <div class="column left-top">
-                <figure class="image">
+                <audio loop src="resources/inky-md-loop-2.mp3"></audio>
+                <button class="button is-small is-danger is-rounded" id="play-pause">
+                    <i class="fas fa-volume-up" id="volume-icon"></i>
+                </button>
+                <figure id="me-container" class="image">
                     <img class="is-rounded" id="me" src="resources/me.jpg">
                 </figure>
                 <div class="text-area">
                     <div
-                        class="is-family-code has-text-weight-semibold is-size-3-desktop is-size-4-tablet is-size-5-mobile element">
+                        class="is-family-code has-text-weight-semibold is-size-3-desktop is-size-4-tablet is-size-6-mobile element">
                     </div>
                     <script>
                         var typed = new Typed('.element', {
@@ -43,17 +44,17 @@
             <div class="column right-top">
                 <div>
                     <ul class="socials">
-                        <li class="social-button"> <a href="https://github.com/adirar111"><i
+                        <li class="social-button"> <a href="https://github.com/adirar111"><i id="github"
                                     class="fab fa-github"></i></a></li>
-                        <li class="social-button"> <a href="https://www.linkedin.com/in/aymen-dirar/"><i
+                        <li class="social-button"> <a href="https://www.linkedin.com/in/aymen-dirar/"><i id="linkedin"
                                     class="fab fa-linkedin"></a></i> </li>
-                        <li class="social-button"> <a href="https://twitter.com/adirar111"><i
+                        <li class="social-button"> <a href="https://twitter.com/adirar111"><i id="twitter"
                                     class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
-                <div class="email">
-                    <h3 class="is-size-2-desktop is-size-4-tablet is-size-6-mobile">Contact me at:</h3>
-                    <h1 class="has-text-weight-bold is-size-4-desktop is-size-6-tablet is-size-7-mobile">
+                <div class="contact">
+                    <h3 id="contact-at">Contact me at:</h3>
+                    <h1 id="email" class="has-text-weight-bold">
                         adirar111[at]gmail[dot]com</h1>
                 </div>
             </div>
@@ -61,12 +62,91 @@
     </section>
     <section class="info">
         <div class="columns full-height">
-            <div class="column left-bottom">c</div>
-            <div class="column middle-bottom">d</div>
-            <div class="column right-bottom">e</div>
+            <div class="column left-bottom">
+                <h1 class="title">About me</h1>
+                <hr>
+                <div class="card">
+                    <header class="card-header">
+                        <h1 class="card-header-title">
+                            Component
+                        </h1>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column middle-bottom">
+                <h1 class="title">Experience</h1>
+                <hr>
+                <div class="card">
+                    <header class="card-header">
+                        <h1 class="card-header-title">
+                            Component
+                        </h1>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="column right-bottom">
+                <h1 class="title">Projects</h1>
+                <hr>
+                <div class="card">
+                    <header class="card-header">
+                        <h1 class="card-header-title">
+                            Component
+                        </h1>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <header class="card-header">
+                        <h1 class="card-header-title">
+                            Component
+                        </h1>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
     </section>
-    <footer>f</footer>
+    <section>
+        <footer id="footer">
+            <div class="columns full-height has-text-centered">
+                <div class="column">
+                    <p>
+                        Thanks for visiting my personal site built with Bulma. You can find the embeded song
+                        <a href="https://www.youtube.com/watch?v=3ajOnjfeCMw">here</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 <script src="./main.js"></script>
 

@@ -23,11 +23,13 @@ $primary-invert: $pink-invert;
 html,
 body {
     height: 100%;
+    overflow: auto;
 }
 
 .audio-control {
     position: relative;
     height: auto;
+    padding: 5px;
 }
 
 .intro {
@@ -35,8 +37,10 @@ body {
 }
 
 .info {
-    height: 500px;
+    position: relative;
+    height: auto;
     background-color: lightblue;
+    bottom: auto;
 }
 
 .full-height {
@@ -60,20 +64,31 @@ body {
 }
 
 .left-bottom {
+    position: relative;
     min-height: 33%;
 }
 
 .middle-bottom {
+    position: relative;
     min-height: 33%;
 }
 
 .right-bottom {
+    position: relative;
     min-height: 33%;
 }
 
+#footer {
+    top: 12px;
+    position: relative;
+    bottom: 0px;
+    height: auto;
+    // padding: 20px;
+}
+
 .text-area {
-    position: initial;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
 }
 
 .element {
@@ -81,13 +96,21 @@ body {
 }
 
 #me {
-    height: 20vw;
-    width: 20vw;
-    box-shadow: 0px 0px 88px -59px #000;
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    box-shadow: 0px 0px 74px -19px #000;
+}
+
+#me-container {
+    position: absolute;
+    height: 65%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .typed-cursor {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .socials {
@@ -102,14 +125,23 @@ body {
     vertical-align: middle;
 }
 
-.email {
+.contact {
     position: relative;
     margin-top: 30px;
+}
+
+#contact-at {
+    font-size: 30px;
+}
+
+#email {
+    font-size: 40px;
 }
 
 a {
     color: #000;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
@@ -124,48 +156,31 @@ audio {
 
 // for transition to mobile
 @media only screen and (max-width: 1200px) {
-    #me {
-        height: 25vw;
-        width: 25vw;
-        box-shadow: 0px 0px 88px -59px #000;
+    .contact {
+        margin-top: 25px;
     }
-    .text-area {
-        position: initial;
-        margin-top: 30px;
+
+    #contact-at {
+        font-size: 20px;
     }
-    .email {
-        margin-top: 0px;
+
+    #email {
+        font-size: 25px;
     }
+
     .typed-cursor {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
+
     .socials {
         display: inline-block;
         vertical-align: middle;
         font-size: 50px;
     }
+
     .social-button {
         display: inline-block;
         margin: 0px 20px 0px 20px;
         vertical-align: middle;
-    }
-}
-
-// for larger displays
-@media only screen and (min-width: 1500px) {
-    #me {
-        height: 15vw;
-        width: 15vw;
-        box-shadow: 0px 0px 88px -59px #000;
-    }
-    .text-area {
-        position: initial;
-        margin-top: 50px;
-    }
-    .email {
-        margin-top: 50px;
-    }
-    .typed-cursor {
-        font-size: 2rem;
     }
 }
