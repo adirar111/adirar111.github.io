@@ -14152,7 +14152,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Karla", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -14973,12 +14973,13 @@ body {
   padding: 5px; }
 
 .intro {
-  height: 400px; }
+  height: 400px;
+  background-color: #fffaf0; }
 
 .info {
   position: relative;
   height: auto;
-  background-color: lightblue;
+  background-color: #374785;
   bottom: auto; }
 
 .full-height {
@@ -14988,12 +14989,10 @@ body {
 
 .left-top {
   position: relative;
-  background-color: white;
   min-height: 50%; }
 
 .right-top {
   position: relative;
-  background-color: lightpink;
   min-height: 50%;
   overflow: hidden;
   text-align: center; }
@@ -15014,7 +15013,15 @@ body {
   top: 12px;
   position: relative;
   bottom: 0px;
-  height: auto; }
+  height: auto;
+  background-color: #24305e;
+  color: #fff; }
+
+#footer-link {
+  color: #f8e9a1; }
+
+#footer-link:hover {
+  color: #f76c6c; }
 
 .text-area {
   position: absolute;
@@ -15032,8 +15039,8 @@ body {
 #me-container {
   position: absolute;
   height: 65%;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 20px;
+  padding-bottom: 30px; }
 
 .typed-cursor {
   font-size: 2rem; }
@@ -15059,25 +15066,39 @@ body {
   font-size: 40px; }
 
 a {
-  color: #000;
+  color: #24305e;
   text-decoration: none;
   transition: 0.3s; }
 
 a:hover {
-  color: #fff;
+  color: #f76c6c;
   text-decoration: none;
   cursor: pointer; }
 
 audio {
   display: none; }
 
+#play-pause {
+  color: white;
+  background-color: #24305e;
+  transition: 0.3s; }
+
+#play-pause:hover {
+  background-color: #f76c6c; }
+
+#header {
+  color: #fff; }
+
+#hr {
+  background-color: #f76c6c; }
+
 @media only screen and (max-width: 1200px) {
   .contact {
     margin-top: 25px; }
   #contact-at {
-    font-size: 20px; }
+    font-size: 15px; }
   #email {
-    font-size: 25px; }
+    font-size: 20px; }
   .typed-cursor {
     font-size: 1.4rem; }
   .socials {
