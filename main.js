@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-    // credit: https://codepen.io/lasjorg/pen/GRKreyJ
+    // adapted from https://codepen.io/lasjorg/pen/GRKreyJ
     const button = document.querySelector("#play-pause");
     const audio = document.querySelector("audio");
 
