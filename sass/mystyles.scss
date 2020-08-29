@@ -23,13 +23,6 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url("../resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff")
-            format("woff"),
-        url("../resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff2")
-            format("woff2");
-}
 
 // Custom CSS
 html,
@@ -110,7 +103,6 @@ body {
 .text-area {
     position: absolute;
     bottom: 0;
-    font-family: "JetBrains Mono", Consolas;
 }
 
 .element {
