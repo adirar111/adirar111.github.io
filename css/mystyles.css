@@ -14962,6 +14962,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff") format("woff"), url("./resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff2") format("woff2"); }
+
 html,
 body {
   height: 100%;
@@ -15026,7 +15030,8 @@ body {
 
 .text-area {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  font-family: "JetBrains Mono", Consolas; }
 
 .element {
   display: inline; }
@@ -15065,6 +15070,9 @@ body {
 
 #email {
   font-size: 40px; }
+
+.exp-title {
+  color: #24305e; }
 
 a {
   color: #24305e;
