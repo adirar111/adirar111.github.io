@@ -14964,7 +14964,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("./resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff") format("woff"), url("./resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff2") format("woff2"); }
+  src: url("../resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff") format("woff"), url("../resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff2") format("woff2"); }
 
 html,
 body {

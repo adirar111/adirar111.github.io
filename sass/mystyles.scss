@@ -25,9 +25,9 @@ $primary-invert: $pink-invert;
 @import "../node_modules/bulma/bulma";
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("./resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff")
+    src: url("../resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff")
             format("woff"),
-        url("./resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff2")
+        url("../resources/JetBrainsMonoWeb/JetBrainsMono-Regular.woff2")
             format("woff2");
 }
 
