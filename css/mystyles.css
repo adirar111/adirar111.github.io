@@ -15110,6 +15110,10 @@ audio {
   text-align: right;
   padding: 12px 16px; }
 
+#twitter-blue {
+  color: #1b97f0;
+  font-weight: bold; }
+
 @media only screen and (max-width: 1200px) {
   .contact {
     margin-top: 25px; }
